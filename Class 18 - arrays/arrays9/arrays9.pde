@@ -5,8 +5,8 @@ void setup() {
   size(600, 500);
   xs[0] = random(width);
   xs[1] = random(width);
-  ys[0] = random(height);
-  ys[1] = random(height);
+  ys[0] = random(40);
+  ys[1] = random(40);
 }
 
 void draw() {

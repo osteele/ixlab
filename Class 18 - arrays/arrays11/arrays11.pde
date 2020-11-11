@@ -5,7 +5,7 @@ void setup() {
   size(600, 500);
   for (int i = 0; i < 10; i++) {
     xs[i] = random(width);
-    ys[i] = random(height);
+    ys[i] = random(40);
   }
 }
 
