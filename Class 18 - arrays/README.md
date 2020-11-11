@@ -79,8 +79,22 @@ Instead of using `10` in the `for` loops, use `xs.length`. Now the loop is
 reading the length from the array itself, so it will always loop over the right
 number of elements.
 
+Now change to 30, 100, 300, etc.
+
 ---
 arrays13.pde
 
 Replace the `10` in `new float[10]` by a variable `DOT_COUNT`. Now we can change
 the value of `DOT_COUNT`, and `xs` and `ys` will have the new size.
+
+---
+
+arrays14.pde
+
+Turn speed into a variable. Try different speed e.g. 4
+
+---
+
+arrays15.pde
+
+Make an array of speeds. Remember to increase the DOT_COUNT! Filling them with random(4). 
