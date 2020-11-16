@@ -24,8 +24,11 @@ easily demonstrated through examples. See the lesson plans below.
 
 1. Run `p1_list_serial_ports` in Processing. This lists the serial ports.
 2. Upload `2a_send_constant`. Open the Arduino Serial Monitor to display the
-   repeated `A`s.
-3. Run `p2_read_and_print`. It will display an error that the Serial Monitor is
+   repeated "A"s. Discuss why 65 is "A".
+3. Leave the Serial Monitor open and run `p2_read_and_print`. The console will
+   probably display an error "RuntimeException: Error opening serial port". Fix
+   this by updating the port string in the code to the name of the port that is
+   connected to the Arduino. Then you will get an error that the serial bus is
    busy. Close the Arduino Serial Monitor, and try again. Observe the repeated
    number in the console.
 4. Upload `2b_send_loop`. Observe that the number changes in the Processing
@@ -37,9 +40,10 @@ easily demonstrated through examples. See the lesson plans below.
 6. Run `p3a_read_and_draw`, to display a circle whose radius is driven by the
    Arduino. (We could also use `map` to scale the circle to the size of the
    canvas.)
-7. Add a `delay(100)` to the Arduino sketch. (This is `3a_send_variable_delay`.)
-   Why does the circle in the Processing sketch flicker? How can this be fixed?
-   (The answer is in `p3b_read_retain_and_draw`).
+7. `3a_send_variable_delay` increases the delay in the Arduino sketch to
+   `delay(100)`  Why does the circle in the Processing sketch now flicker? How
+   can this be fixed? (One answer is to only erase the canvas when there's a new
+   value. The other answer is in `p3b_read_retain_and_draw`).
 8. Upload `3b_send_pot_overflow`. Now the pot that is connected to the Arduino
    controls the size of the Processing circle. Why does the size reset four
    times as your turn the pot all the way?
