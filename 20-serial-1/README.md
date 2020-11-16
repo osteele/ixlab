@@ -37,3 +37,15 @@ easily demonstrated through examples. See the lesson plans below.
 7. Add a `delay(100)` to the Arduino sketch. (This is `3a_send_variable_delay`.)
    Why does the circle in the Processing sketch flicker? How can this be fixed?
    (The answer is in `p3b_read_retain_and_draw`).
+
+### Processing to Arduino
+
+1. Upload `4_led_from_serial` and run `p4_mouse_button_to_serial`. Press the
+   mouse button over the canvas to light the LED.
+2. Upload `5_serial_to_servo` and run `p5_mouse_x_to_serial`. Move the mouse
+   left and right across the canvas to control the servo angle. Note the use of
+   `map` in both the Arduino and the Processing sketch. Processing uses `map` to
+   make a value in the range 0…255. The Arduino uses `map` to turn this value
+   into a servo angle in the range 0…180. Questions: (1) Why not have Processing
+   send `mouseX` directly? (2) Why not have Processing compute a value 0…180,
+   instead of making the Arduino do this?
