@@ -12,7 +12,7 @@ void setup() {
 
 void draw() {
   background(0);
-  if (myPort.available() > 0) {
+  while (myPort.available() > 0) {
     n = myPort.read();
   }
   circle(width/2, height/2, n);

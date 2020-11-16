@@ -13,7 +13,7 @@ void setup() {
 
 void draw() {
   background(0);
-  if (myPort.available() > 0) {
+  while (myPort.available() > 0) {
     int n = myPort.read();
     println(n);
   }
