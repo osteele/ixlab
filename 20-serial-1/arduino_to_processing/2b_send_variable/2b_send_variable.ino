@@ -7,4 +7,8 @@ void setup() {
 void loop() {
   Serial.write(n);
   n += 1;
+
+  // Sending values too quickly might fill up Processing's buffers. This delay
+  // resolves the issue.
+  delay(10);
 }

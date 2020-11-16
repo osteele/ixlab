@@ -4,4 +4,8 @@ void setup() {
 
 void loop() {
   Serial.write(64);
-}
+
+  // Sending values too quickly might fill up Processing's buffers. This delay
+  // resolves the issue.
+  delay(10);
+}}
