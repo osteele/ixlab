@@ -1,0 +1,35 @@
+# Sending Single Numeric Values between Arduino and Processing
+
+This folder contains two sub-folders:
+
+- `arduino_to_processing` contains examples that send an value from the Arduino
+  to Processing
+- `processing_to_arduino` contains examples that send a value from Processing to
+  the Arduino
+
+Within each subfolder, folders whose names begin with a number (e.g. `2a_send_constant`) are Arduino sketches. Folders whose names begin with a "p" (e.g. `p2_read_and_print`) are Processing sketches.
+
+Sometimes a single Arduino sketch is used with several Processing sketches, and
+a single Processing sketch is used with several Arduino sketches. The numbers
+and names are used to align the Arduino and Processing sketches. This is more
+easily demonstrated through examples. See the lesson plans below.
+
+## Arduino to Processing
+
+1. Run `p1_list_serial_ports` in Processing. This lists the serial ports.
+2. Upload `2a_send_constant`. Open the Arduino Serial Monitor to display the
+   repeated `A`s.
+3. Run `p2_read_and_print`. It will display an error that the Serial Monitor is
+   busy. Close the Arduino Serial Monitor, and try again. Observe the repeated
+   number in the console.
+4. Upload `2b_send_loop`. Observe that the number changes in the Processing
+   console.
+5. Ask the class how to keep track of the next value, so that `loop()` sends a 0
+   the first time that it is called, then a 1, etc. The answer is in
+   `2c_send_variable`. Observe (in the Processing console) that the number
+   progresses from …, 253, 254, 255 back to 0, 1, 2, …. Why is this?
+6. Run `p3a_read_and_draw`, to display a circle whose radius is driven by the
+   Arduino.
+7. Add a `delay(100)` to the Arduino sketch. (This is `3a_send_variable_delay`.)
+   Why does the circle in the Processing sketch flicker? How can this be fixed?
+   (The answer is in `p3b_read_retain_and_draw`).
