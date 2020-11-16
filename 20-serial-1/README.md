@@ -28,15 +28,22 @@ easily demonstrated through examples. See the lesson plans below.
    number in the console.
 4. Upload `2b_send_loop`. Observe that the number changes in the Processing
    console.
-5. Ask the class how to keep track of the next value, so that `loop()` sends a 0
-   the first time that it is called, then a 1, etc. The answer is in
-   `2c_send_variable`. Observe (in the Processing console) that the number
-   progresses from …, 253, 254, 255 back to 0, 1, 2, …. Why is this?
+5. Question: how to eliminate the `for` loop, and change it so that instead
+   `loop()` sends a 0 the first time that it is called, then a 1, etc. The
+   answer is in `2c_send_variable`. Observe (in the Processing console) that the
+   number progresses from …, 253, 254, 255 back to 0, 1, 2, …. Why is this?
 6. Run `p3a_read_and_draw`, to display a circle whose radius is driven by the
-   Arduino.
+   Arduino. (We could also use `map` to scale the circle to the size of the
+   canvas.)
 7. Add a `delay(100)` to the Arduino sketch. (This is `3a_send_variable_delay`.)
    Why does the circle in the Processing sketch flicker? How can this be fixed?
    (The answer is in `p3b_read_retain_and_draw`).
+8. Upload `3b_send_pot_overflow`. Now the pot that is connected to the Arduino
+   controls the size of the Processing circle. Why does the size reset four
+   times as your turn the pot all the way?
+9. Upload `3c_send_pot_scaled`. Now one revolution of the pot changes the size
+   for smallest to largest. We could have used `map` instead of dividing by
+   four.
 
 ### Processing to Arduino
 
