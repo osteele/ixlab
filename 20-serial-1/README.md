@@ -7,6 +7,8 @@ This folder contains two sub-folders:
 - `processing_to_arduino` contains examples that send a value from Processing to
   the Arduino
 
+## File Names
+
 Within each subfolder, folders whose names begin with a number (e.g. `2a_send_constant`) are Arduino sketches. Folders whose names begin with a "p" (e.g. `p2_read_and_print`) are Processing sketches.
 
 Sometimes a single Arduino sketch is used with several Processing sketches, and
@@ -14,7 +16,9 @@ a single Processing sketch is used with several Arduino sketches. The numbers
 and names are used to align the Arduino and Processing sketches. This is more
 easily demonstrated through examples. See the lesson plans below.
 
-## Arduino to Processing
+## Lesson Plans
+
+### Arduino to Processing
 
 1. Run `p1_list_serial_ports` in Processing. This lists the serial ports.
 2. Upload `2a_send_constant`. Open the Arduino Serial Monitor to display the
