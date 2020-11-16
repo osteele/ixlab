@@ -16,9 +16,11 @@ a single Processing sketch is used with several Arduino sketches. The numbers
 and names are used to align the Arduino and Processing sketches. This is more
 easily demonstrated through examples. See the lesson plans below.
 
-## Lesson Plans
+## Lesson Plan
 
-### Arduino to Processing
+![](lesson-plan.png)
+
+### A. Arduino to Processing
 
 1. Run `p1_list_serial_ports` in Processing. This lists the serial ports.
 2. Upload `2a_send_constant`. Open the Arduino Serial Monitor to display the
@@ -45,7 +47,7 @@ easily demonstrated through examples. See the lesson plans below.
    for smallest to largest. We could have used `map` instead of dividing by
    four.
 
-### Processing to Arduino
+### B. Processing to Arduino
 
 1. Upload `4_led_from_serial` and run `p4_mouse_button_to_serial`. Press the
    mouse button over the canvas to light the LED.
