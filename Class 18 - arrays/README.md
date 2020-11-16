@@ -56,7 +56,7 @@ initial values `0` and `0`. Then we change the array values, on lines 6–9.
 
 ---
 arrays9.pde
-
+/Users/ag7338/Documents/GitHub/ixlab/Class 18 - arrays/README.md
 Set the array values to random numbers. Each time we run the sketch, the circles
 will start in a different position.
 
