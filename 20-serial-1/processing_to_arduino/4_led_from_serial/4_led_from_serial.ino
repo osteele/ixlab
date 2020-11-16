@@ -24,7 +24,7 @@ void loop() {
   } else if (valueFromProcessing == 'L') {
     digitalWrite(ledPin, LOW);
   } else {
-    // something esle
+    // something else
   }
 
 
