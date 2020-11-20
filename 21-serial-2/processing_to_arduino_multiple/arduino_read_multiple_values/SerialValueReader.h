@@ -1,6 +1,6 @@
 class SerialValueReader {
  public:
-  SerialValueReader(int count) : size(count), values(new int[count]) {}
+  SerialValueReader(int count=1) : size(count), values(new int[count]) {}
   int size;
   int* values;
 
@@ -11,6 +11,10 @@ class SerialValueReader {
           Serial.println("Error: SerialValueReader.get index out of bounds");
           return -1;
       }
+  }
+
+  int value() {
+    return this->get(0);
   }
 
   // receive serial data from Processing
