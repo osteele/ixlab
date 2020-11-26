@@ -10,3 +10,4 @@ These progresions are intended to be jseful to instructors (or for use in a poss
 
 - Class 18 – Arrays: [README](./18-arrays/README.md), [files](https://github.com/osteele/ixlab-examples/tree/main/18-arrays)
 - Class 20 – Serial 1: [README](./20-serial-1/README.md), [files](https://github.com/osteele/ixlab-examples/tree/main/20-serial-1)
+- Class 23 – Images: [README](./23-images/README.md), [files](https://github.com/osteele/ixlab-examples/tree/main/23-images)
