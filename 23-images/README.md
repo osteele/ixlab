@@ -14,3 +14,6 @@ glass" circle.
 `halftone_1`: draw just the brightness; ignore the hue and saturation
 
 `halftone_2`: change the circle size based on the image brightness
+
+`play_while_pressed`: demonstrate the role of `movie.read()`. The next frame is
+read only while the mouse is pressed.
